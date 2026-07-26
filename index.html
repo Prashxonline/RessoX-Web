@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RessoX - Unlimited Music, Synced Lyrics & Free APK Download</title>
+    <title>RessoX - Unlimited Music, Synced Lyrics & Free 320kbps APK</title>
     
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="RessoX - Unlimited Music, Synced Lyrics & Free APK Download">
-    <meta name="description" content="Download RessoX APK v2.1.0 for Android. Enjoy 320kbps Hi-Fi lossless music streaming, synchronized karaoke lyrics, background playback, and 0 ads free forever.">
-    <meta name="keywords" content="RessoX, Resso Mod, Free Music App, 320kbps Music Download, Synced Lyrics, Resso APK, Android Music Player">
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="RessoX - Unlimited Music, Synced Lyrics & Free 320kbps APK">
+    <meta name="description" content="Download RessoX APK v2.1.0 for Android. Stream 80M+ songs with 320kbps Hi-Fi lossless audio, real-time synchronized karaoke lyrics, zero ads, background playback, and offline downloads.">
+    <meta name="keywords" content="RessoX, Resso Mod, Free Music App, 320kbps Music Download, Synced Lyrics, Resso APK, Android Music Player, ExoPlayer Music">
     <meta name="theme-color" content="#0a0518">
 
-    <!-- Open Graph / Facebook / WhatsApp -->
+    <!-- Open Graph / WhatsApp / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ressox.vercel.app/">
+    <meta property="og:url" content="https://resso-x-web.vercel.app/">
     <meta property="og:title" content="RessoX - Reimagined Free Music Experience">
     <meta property="og:description" content="Stream 80M+ songs in 320kbps Hi-Fi audio with real-time synced lyrics, 0 ads, and offline downloads. Download RessoX APK now!">
     <meta property="og:image" content="assets/hero.jpg">
@@ -30,7 +30,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -40,26 +40,28 @@
 </head>
 <body>
 
-    <!-- Ambient Background Glows -->
-    <div class="ambient-glow glow-1"></div>
-    <div class="ambient-glow glow-2"></div>
-    <div class="ambient-glow glow-3"></div>
+    <!-- Ambient Dynamic Background Glows -->
+    <div class="ambient-glow glow-1" id="glow1"></div>
+    <div class="ambient-glow glow-2" id="glow2"></div>
+    <div class="ambient-glow glow-3" id="glow3"></div>
 
     <!-- Navigation Header -->
-    <header class="navbar">
+    <header class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="brand">
                 <img src="assets/logo.jpg" alt="RessoX Logo" class="brand-logo">
                 <span class="brand-name">Resso<span class="highlight">X</span></span>
-                <span class="badge-v">v2.1</span>
+                <span class="badge-v"><i class="fa-solid fa-bolt text-pink"></i> v2.1.0</span>
             </a>
 
             <nav class="nav-links" id="navLinks">
-                <a href="#hero" class="active">Home</a>
-                <a href="#player">Web Player</a>
-                <a href="#features">Features</a>
-                <a href="#download">Download APK</a>
-                <a href="#faq">FAQ</a>
+                <a href="#hero" class="nav-item active">Home</a>
+                <a href="#player" class="nav-item">Web Player</a>
+                <a href="#playlists" class="nav-item">Playlists</a>
+                <a href="#features" class="nav-item">Features</a>
+                <a href="#showcase" class="nav-item">App Preview</a>
+                <a href="#download" class="nav-item">Download APK</a>
+                <a href="#faq" class="nav-item">FAQ</a>
             </nav>
 
             <div class="nav-actions">
@@ -88,7 +90,7 @@
                 </h1>
                 
                 <p class="hero-description">
-                    RessoX is the ultimate Android music player featuring 80M+ tracks, real-time synchronized karaoke lyrics, lossless 320kbps audio, zero ads, and direct offline downloads.
+                    Experience 80M+ songs with real-time synchronized karaoke lyrics, studio-quality 320kbps audio, zero ads, background playback, and direct offline downloads.
                 </p>
 
                 <div class="hero-buttons">
@@ -111,7 +113,7 @@
                     <div class="metric-divider"></div>
                     <div class="metric-item">
                         <span class="metric-num">80M+</span>
-                        <span class="metric-label">HQ Songs</span>
+                        <span class="metric-label">HQ Tracks</span>
                     </div>
                     <div class="metric-divider"></div>
                     <div class="metric-item">
@@ -128,8 +130,8 @@
 
             <!-- Hero Showcase Card -->
             <div class="hero-preview">
-                <div class="showcase-card glass-panel">
-                    <img src="assets/hero.jpg" alt="RessoX App Preview" class="hero-banner-img">
+                <div class="showcase-card glass-panel glow-card">
+                    <img src="assets/hero.jpg" alt="RessoX App Banner" class="hero-banner-img">
                     
                     <div class="floating-badge badge-top">
                         <i class="fa-solid fa-sliders text-cyan"></i>
@@ -149,36 +151,41 @@
     <section id="player" class="section player-section">
         <div class="section-container">
             <div class="section-header text-center">
-                <span class="sub-heading"><i class="fa-solid fa-wave-square"></i> LIVE DEMO</span>
+                <span class="sub-heading"><i class="fa-solid fa-wave-square"></i> INTERACTIVE PLAYER</span>
                 <h2 class="section-title">Experience RessoX Web Player</h2>
                 <p class="section-subtitle">Search any song or choose from trending hits to experience live 320kbps streaming & synced lyrics directly on your browser.</p>
             </div>
 
             <div class="web-player-container glass-panel">
-                <!-- Search & Filter Controls -->
+                <!-- Search & Auto-complete Controls -->
                 <div class="player-top-bar">
-                    <div class="search-box">
-                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                        <input type="text" id="searchInput" placeholder="Search song, artist, album (e.g. Arijit Singh, Lofi, Animal)..." autocomplete="off">
-                        <button id="searchBtn" class="btn btn-sm btn-gradient">Search</button>
+                    <div class="search-box-container">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <input type="text" id="searchInput" placeholder="Search any song, artist, or album (e.g. Arijit Singh, Animal, Lofi)..." autocomplete="off">
+                            <button id="searchBtn" class="btn btn-sm btn-gradient"><i class="fa-solid fa-arrow-right"></i> Search</button>
+                        </div>
+                        <!-- Live Autocomplete Dropdown -->
+                        <div class="search-dropdown" id="searchDropdown"></div>
                     </div>
                     
                     <div class="genre-chips">
-                        <button class="chip active" data-genre="bollywood">🔥 Trending</button>
+                        <button class="chip active" data-genre="bollywood">🔥 Trending India</button>
                         <button class="chip" data-genre="lofi">🎧 Lofi Chill</button>
-                        <button class="chip" data-genre="punjabi">⚡ Punjabi Pop</button>
-                        <button class="chip" data-genre="edm">🚀 EDM Bass</button>
-                        <button class="chip" data-genre="romantic">💖 Romantic</button>
+                        <button class="chip" data-genre="punjabi">⚡ Punjabi Explosions</button>
+                        <button class="chip" data-genre="edm">🚀 EDM & Bass</button>
+                        <button class="chip" data-genre="romantic">💖 Romantic Hits</button>
                     </div>
                 </div>
 
-                <!-- Main Player Grid -->
+                <!-- Main Player Layout -->
                 <div class="player-grid">
-                    <!-- Left: Now Playing & Audio Visualizer -->
+                    <!-- Left: Now Playing Card -->
                     <div class="now-playing-card">
                         <div class="album-art-wrapper">
                             <img src="assets/logo.jpg" id="playerArt" alt="Album Cover" class="album-art">
-                            <div class="quality-tag"><i class="fa-solid fa-bolt"></i> 320kbps</div>
+                            <div class="vinyl-overlay" id="vinylOverlay"></div>
+                            <div class="quality-tag"><i class="fa-solid fa-bolt"></i> 320kbps HQ</div>
                         </div>
 
                         <div class="song-meta">
@@ -186,7 +193,7 @@
                             <p id="playerArtist" class="song-artist">RessoX High-Fidelity Streaming</p>
                         </div>
 
-                        <!-- Audio Visualizer Canvas -->
+                        <!-- Real Audio Spectrum Visualizer -->
                         <canvas id="visualizerCanvas" class="visualizer-canvas"></canvas>
 
                         <!-- Progress Bar & Seek -->
@@ -198,41 +205,117 @@
                             </div>
                         </div>
 
-                        <!-- Playback Controls -->
+                        <!-- Player Controls -->
                         <div class="controls-bar">
-                            <button id="shuffleBtn" class="control-btn" title="Shuffle"><i class="fa-solid fa-shuffle"></i></button>
-                            <button id="prevBtn" class="control-btn" title="Previous"><i class="fa-solid fa-backward-step"></i></button>
-                            <button id="playPauseBtn" class="control-btn play-main-btn" title="Play/Pause">
+                            <button id="shuffleBtn" class="control-btn" title="Shuffle Queue"><i class="fa-solid fa-shuffle"></i></button>
+                            <button id="prevBtn" class="control-btn" title="Previous Song"><i class="fa-solid fa-backward-step"></i></button>
+                            <button id="playPauseBtn" class="control-btn play-main-btn" title="Play / Pause">
                                 <i class="fa-solid fa-play"></i>
                             </button>
-                            <button id="nextBtn" class="control-btn" title="Next"><i class="fa-solid fa-forward-step"></i></button>
+                            <button id="nextBtn" class="control-btn" title="Next Song"><i class="fa-solid fa-forward-step"></i></button>
                             <button id="likeBtn" class="control-btn" title="Like Song"><i class="fa-regular fa-heart"></i></button>
+                            <button id="expandPlayerBtn" class="control-btn" title="Open Fullscreen Player"><i class="fa-solid fa-expand"></i></button>
                         </div>
                     </div>
 
-                    <!-- Right: Synced Lyrics & Queue -->
+                    <!-- Right: Lyrics & Song Queue -->
                     <div class="player-side-panel">
                         <div class="panel-tabs">
                             <button class="tab-btn active" id="tabLyricsBtn"><i class="fa-solid fa-quote-right"></i> Synced Lyrics</button>
-                            <button class="tab-btn" id="tabQueueBtn"><i class="fa-solid fa-list-ul"></i> Song Queue</button>
+                            <button class="tab-btn" id="tabQueueBtn"><i class="fa-solid fa-list-ul"></i> Song Queue (<span id="queueCount">0</span>)</button>
+                            <button class="tab-btn" id="tabEqBtn"><i class="fa-solid fa-sliders"></i> Equalizer</button>
                         </div>
 
-                        <!-- Lyrics Box -->
+                        <!-- Synced Lyrics View -->
                         <div class="lyrics-container active" id="lyricsContainer">
                             <div class="lyrics-wrapper" id="lyricsWrapper">
-                                <p class="lyric-line active">♪ RessoX Synced Lyrics Engine ♪</p>
-                                <p class="lyric-line">Search or play a song to view live lyrics</p>
-                                <p class="lyric-line">Real-time synchronized karaoke display</p>
-                                <p class="lyric-line">Experience high resolution audio output</p>
+                                <p class="lyric-line active">♪ RessoX Real-Time Synced Lyrics Engine ♪</p>
+                                <p class="lyric-line">Search or select any song to view live karaoke lyrics</p>
+                                <p class="lyric-line">High Fidelity 320kbps Audio Output</p>
                             </div>
                         </div>
 
-                        <!-- Song Queue List -->
+                        <!-- Song Queue View -->
                         <div class="queue-container" id="queueContainer">
-                            <div class="queue-list" id="queueList">
-                                <!-- Populated dynamically -->
+                            <div class="queue-list" id="queueList"></div>
+                        </div>
+
+                        <!-- Equalizer View -->
+                        <div class="eq-container" id="eqContainer">
+                            <div class="eq-presets">
+                                <span class="eq-title">Sound Presets:</span>
+                                <div class="eq-buttons">
+                                    <button class="eq-btn active" data-preset="flat">Flat</button>
+                                    <button class="eq-btn" data-preset="bass">Bass Boost</button>
+                                    <button class="eq-btn" data-preset="vocal">Vocal Booster</button>
+                                    <button class="eq-btn" data-preset="treble">Treble Boost</button>
+                                </div>
+                            </div>
+                            <div class="eq-bars">
+                                <div class="eq-bar-item"><span class="eq-label">60Hz</span><input type="range" class="eq-slider" value="50"></div>
+                                <div class="eq-bar-item"><span class="eq-label">230Hz</span><input type="range" class="eq-slider" value="65"></div>
+                                <div class="eq-bar-item"><span class="eq-label">910Hz</span><input type="range" class="eq-slider" value="50"></div>
+                                <div class="eq-bar-item"><span class="eq-label">4kHz</span><input type="range" class="eq-slider" value="70"></div>
+                                <div class="eq-bar-item"><span class="eq-label">14kHz</span><input type="range" class="eq-slider" value="60"></div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curated Playlists Section -->
+    <section id="playlists" class="section playlists-section">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="sub-heading"><i class="fa-solid fa-compact-disc"></i> EXPLORE MUSIC</span>
+                <h2 class="section-title">Featured Trending Playlists</h2>
+                <p class="section-subtitle">Curated collections updated daily with the latest hits and classic anthems.</p>
+            </div>
+
+            <div class="playlists-grid">
+                <div class="playlist-card glass-panel" data-query="Top 20 India 2026">
+                    <div class="playlist-cover">
+                        <img src="assets/hero.jpg" alt="Top 50 India">
+                        <button class="play-overlay-btn"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <div class="playlist-info">
+                        <h3>Top 50 India Chart</h3>
+                        <p>Most played tracks in India right now</p>
+                    </div>
+                </div>
+
+                <div class="playlist-card glass-panel" data-query="Arijit Singh Hits">
+                    <div class="playlist-cover">
+                        <img src="assets/logo.jpg" alt="Arijit Singh Essentials">
+                        <button class="play-overlay-btn"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <div class="playlist-info">
+                        <h3>Arijit Singh Essentials</h3>
+                        <p>Soulful romantic melodies & hits</p>
+                    </div>
+                </div>
+
+                <div class="playlist-card glass-panel" data-query="Lofi Chill Study">
+                    <div class="playlist-cover">
+                        <img src="assets/hero.jpg" alt="Lofi Beats">
+                        <button class="play-overlay-btn"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <div class="playlist-info">
+                        <h3>Lofi Chill & Study</h3>
+                        <p>Deep focus, study beats & relax vibes</p>
+                    </div>
+                </div>
+
+                <div class="playlist-card glass-panel" data-query="Punjabi Hits 2026">
+                    <div class="playlist-cover">
+                        <img src="assets/logo.jpg" alt="Punjabi Explosions">
+                        <button class="play-overlay-btn"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <div class="playlist-info">
+                        <h3>Punjabi Explosions</h3>
+                        <p>High-energy bangers & pop hits</p>
                     </div>
                 </div>
             </div>
@@ -243,9 +326,9 @@
     <section id="features" class="section features-section">
         <div class="section-container">
             <div class="section-header text-center">
-                <span class="sub-heading"><i class="fa-solid fa-sparkles"></i> WHY CHOOSE RESSOX</span>
-                <h2 class="section-title">Built For True Music Lovers</h2>
-                <p class="section-subtitle">Packed with premium features that elevate your daily music listening experience.</p>
+                <span class="sub-heading"><i class="fa-solid fa-sparkles"></i> WHY RESSOX</span>
+                <h2 class="section-title">Engineered For Premium Sound</h2>
+                <p class="section-subtitle">Packed with cutting-edge features that set RessoX apart from standard music players.</p>
             </div>
 
             <div class="features-grid">
@@ -262,7 +345,7 @@
                         <i class="fa-solid fa-lines-leaning"></i>
                     </div>
                     <h3 class="feature-title">Real-Time Synced Lyrics</h3>
-                    <p class="feature-desc">Follow along word-for-word with live glowing karaoke lyrics. Share aesthetic lyrics cards directly to social media.</p>
+                    <p class="feature-desc">Follow along word-for-word with live glowing karaoke lyrics. Share aesthetic lyrics quote cards directly to social media.</p>
                 </div>
 
                 <div class="feature-card glass-panel">
@@ -270,15 +353,15 @@
                         <i class="fa-solid fa-download"></i>
                     </div>
                     <h3 class="feature-title">Unlimited Offline Downloads</h3>
-                    <p class="feature-desc">Download tracks directly to your storage with full ID3 metadata and high-resolution album covers for offline playback.</p>
+                    <p class="feature-desc">Save tracks directly to your device storage with full ID3 metadata, album covers, and high-speed multi-thread downloads.</p>
                 </div>
 
                 <div class="feature-card glass-panel">
                     <div class="feature-icon icon-yellow">
                         <i class="fa-solid fa-ban"></i>
                     </div>
-                    <h3 class="feature-title">100% Ad-Free Experience</h3>
-                    <p class="feature-desc">No audio interruptions, no banner ads, and no mandatory logins. Enjoy non-stop music streaming without limits.</p>
+                    <h3 class="feature-title">100% Ad-Free Listening</h3>
+                    <p class="feature-desc">No audio interruptions, no banner ads, and no mandatory accounts. Pure, uninterrupted music streaming 24/7.</p>
                 </div>
 
                 <div class="feature-card glass-panel">
@@ -293,8 +376,52 @@
                     <div class="feature-icon icon-green">
                         <i class="fa-solid fa-palette"></i>
                     </div>
-                    <h3 class="feature-title">Modern Glassmorphic UI</h3>
-                    <p class="feature-desc">Futuristic dark theme designed with vibrant neon gradients, smooth micro-animations, and intuitive gestures.</p>
+                    <h3 class="feature-title">Modern Dark Glass UI</h3>
+                    <p class="feature-desc">Futuristic dark theme designed with vibrant neon gradients, smooth micro-animations, and fluid gestures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Interactive Showcase Section -->
+    <section id="showcase" class="section showcase-section">
+        <div class="section-container">
+            <div class="showcase-box glass-panel">
+                <div class="showcase-grid">
+                    <div class="showcase-visual">
+                        <img src="assets/phone.jpg" alt="RessoX Android App Mockup" class="phone-img">
+                    </div>
+                    <div class="showcase-info">
+                        <span class="sub-heading"><i class="fa-mobile-screen-button"></i> NATIVE ANDROID EXPERIENCE</span>
+                        <h2 class="showcase-title">Sleek, Fast & Powered By Android Media3</h2>
+                        <p class="showcase-desc">Designed specifically for Android devices with background play service, lockscreen album art, bluetooth controls, and fast offline storage.</p>
+
+                        <div class="showcase-points">
+                            <div class="point-item">
+                                <div class="point-icon"><i class="fa-solid fa-circle-check text-pink"></i></div>
+                                <div>
+                                    <h4>Background Playback Service</h4>
+                                    <p>Music continues playing seamlessly when screen is off or switching apps.</p>
+                                </div>
+                            </div>
+
+                            <div class="point-item">
+                                <div class="point-icon"><i class="fa-solid fa-circle-check text-cyan"></i></div>
+                                <div>
+                                    <h4>Low Memory & Battery Usage</h4>
+                                    <p>Optimized Kotlin codebase with zero bloatware and lightweight background footprint.</p>
+                                </div>
+                            </div>
+
+                            <div class="point-item">
+                                <div class="point-icon"><i class="fa-solid fa-circle-check text-purple"></i></div>
+                                <div>
+                                    <h4>Automatic Metadata Tagging</h4>
+                                    <p>Downloaded songs automatically include high-res album covers, title, artist, and lyrics.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -308,10 +435,10 @@
                     <div class="download-info">
                         <div class="hero-badge">
                             <span class="pulse-dot"></span>
-                            <span>Official Release</span>
+                            <span>OFFICIAL APK RELEASE</span>
                         </div>
                         <h2 class="download-title">Download RessoX APK v2.1.0</h2>
-                        <p class="download-desc">Get the latest stable version of RessoX for your Android device. Compatible with Android 7.0 and higher.</p>
+                        <p class="download-desc">Get the latest stable version of RessoX for your Android device. Compatible with Android 7.0 (Nougat) and higher.</p>
 
                         <div class="file-specs">
                             <div class="spec-item">
@@ -334,14 +461,14 @@
 
                         <div class="download-actions">
                             <button id="downloadApkBtn" class="btn btn-gradient btn-xl">
-                                <i class="fa-solid fa-download"></i> Direct Download APK
+                                <i class="fa-solid fa-download"></i> Direct Download APK (Server 1)
                             </button>
                             <a href="https://github.com/Prashxonline/RessoX-Web/releases" target="_blank" rel="noopener" class="btn btn-glass btn-xl">
-                                <i class="fa-brands fa-github"></i> GitHub Release
+                                <i class="fa-brands fa-github"></i> GitHub Release Mirror
                             </a>
                         </div>
 
-                        <!-- SHA256 Verification -->
+                        <!-- SHA256 Checksum -->
                         <div class="sha-box">
                             <span class="sha-label"><i class="fa-solid fa-shield-halved"></i> SHA-256 Checksum:</span>
                             <code id="shaCode" class="sha-code">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</code>
@@ -349,7 +476,7 @@
                         </div>
                     </div>
 
-                    <!-- Right Installation Steps -->
+                    <!-- Installation Steps -->
                     <div class="install-steps">
                         <h3><i class="fa-solid fa-list-check"></i> Easy 3-Step Setup</h3>
                         
@@ -425,7 +552,7 @@
                 <div class="faq-item glass-panel">
                     <button class="faq-question">
                         <span>How does the Synced Lyrics feature work?</span>
-                        <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                        <i class="fa-solid fa-chevron-down faq-icon"></i>
                     </button>
                     <div class="faq-answer">
                         <p>RessoX automatically fetches timed LRC lyrics for playing songs and highlights lines in sync with playback.</p>
@@ -450,6 +577,7 @@
                 <h4>Navigation</h4>
                 <a href="#hero">Home</a>
                 <a href="#player">Web Player</a>
+                <a href="#playlists">Playlists</a>
                 <a href="#features">Features</a>
                 <a href="#download">Download APK</a>
             </div>
@@ -467,11 +595,68 @@
         </div>
     </footer>
 
-    <!-- Toast Notification Container -->
+    <!-- Floating Sticky Bottom Player Bar -->
+    <div class="sticky-player-bar" id="stickyPlayerBar">
+        <div class="mini-art-box">
+            <img src="assets/logo.jpg" id="miniArt" alt="Mini Cover">
+        </div>
+        <div class="mini-song-info">
+            <h4 id="miniTitle">Select Song</h4>
+            <p id="miniArtist">RessoX Stream</p>
+        </div>
+        <div class="mini-controls">
+            <button id="miniPrevBtn" class="mini-btn"><i class="fa-solid fa-backward-step"></i></button>
+            <button id="miniPlayBtn" class="mini-play-btn"><i class="fa-solid fa-play"></i></button>
+            <button id="miniNextBtn" class="mini-btn"><i class="fa-solid fa-forward-step"></i></button>
+            <button id="miniExpandBtn" class="mini-btn" title="Expand Fullscreen"><i class="fa-solid fa-expand"></i></button>
+        </div>
+    </div>
+
+    <!-- Fullscreen Player Modal -->
+    <div class="fullscreen-modal" id="fullscreenModal">
+        <div class="modal-bg-glow" id="modalBgGlow"></div>
+        <button class="modal-close-btn" id="modalCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+        
+        <div class="full-player-content">
+            <div class="full-art-box">
+                <img src="assets/logo.jpg" id="fullPlayerArt" alt="Full Album Cover">
+                <div class="full-vinyl-disc" id="fullVinylDisc"></div>
+            </div>
+            
+            <div class="full-meta">
+                <h2 id="fullPlayerTitle">Song Title</h2>
+                <p id="fullPlayerArtist">Artist Name</p>
+            </div>
+
+            <div class="full-lyrics-box" id="fullLyricsBox">
+                <!-- Lyrics rendered here -->
+            </div>
+
+            <div class="full-controls-container">
+                <div class="progress-area">
+                    <input type="range" id="fullProgressBar" min="0" max="100" value="0" step="0.1">
+                    <div class="time-stamps">
+                        <span id="fullCurrentTime">00:00</span>
+                        <span id="fullTotalDuration">00:00</span>
+                    </div>
+                </div>
+
+                <div class="controls-bar">
+                    <button id="fullShuffleBtn" class="control-btn"><i class="fa-solid fa-shuffle"></i></button>
+                    <button id="fullPrevBtn" class="control-btn"><i class="fa-solid fa-backward-step"></i></button>
+                    <button id="fullPlayPauseBtn" class="control-btn play-main-btn"><i class="fa-solid fa-play"></i></button>
+                    <button id="fullNextBtn" class="control-btn"><i class="fa-solid fa-forward-step"></i></button>
+                    <button id="fullLikeBtn" class="control-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
     <div id="toastContainer" class="toast-container"></div>
 
     <!-- Audio Element -->
-    <audio id="audioElement" preload="metadata"></audio>
+    <audio id="audioElement" crossorigin="anonymous" preload="metadata"></audio>
 
     <!-- Scripts -->
     <script src="app.js"></script>
