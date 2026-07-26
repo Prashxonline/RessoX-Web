@@ -2,405 +2,234 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>RessoX - Premium Free Music Streaming & APK Download</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RessoX - Unlimited Music & Synced Lyrics APK for Android</title>
     
-    <!-- SEO Meta Tags -->
-    <meta name="title" content="RessoX - Premium Free Music Streaming & APK Download">
-    <meta name="description" content="Download RessoX APK v2.1.0 for Android. Enjoy 320kbps Hi-Fi lossless audio, synchronized karaoke lyrics, background playback, zero ads, and offline downloads.">
-    <meta name="theme-color" content="#09090b">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://resso-x-web.vercel.app/">
-    <meta property="og:title" content="RessoX - Premium Music App">
-    <meta property="og:description" content="Stream 80M+ tracks in 320kbps Hi-Fi audio with real-time synced lyrics, 0 ads, and offline downloads.">
-    <meta property="og:image" content="assets/hero.jpg">
+    <!-- Meta Tags -->
+    <meta name="title" content="RessoX - Unlimited Music & Synced Lyrics APK for Android">
+    <meta name="description" content="Download RessoX APK v2.1.0 for Android. Enjoy 320kbps Hi-Fi lossless audio, real-time synchronized lyrics, zero ads, background playback, and offline downloads.">
+    <meta name="theme-color" content="#0f0f12">
 
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
 
-    <!-- Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Icons -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Custom Styles -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="app-body">
+<body>
 
-    <!-- App Header Bar -->
-    <header class="app-header">
+    <!-- Simple Navigation Header -->
+    <header class="site-header">
         <div class="header-container">
-            <a href="#" class="app-brand">
-                <img src="assets/logo.jpg" alt="RessoX Logo" class="brand-icon">
-                <div class="brand-text">
-                    <span class="brand-title">RessoX</span>
-                    <span class="brand-badge">PRO v2.1</span>
-                </div>
+            <a href="#" class="site-logo">
+                <img src="assets/logo.jpg" alt="RessoX Logo" class="logo-img">
+                <span class="logo-text">Resso<span class="brand-pink">X</span></span>
+                <span class="version-tag">v2.1.0</span>
             </a>
 
-            <div class="header-actions">
-                <a href="#download" class="btn-download-pill">
-                    <i class="fa-solid fa-arrow-down"></i> Get APK
-                </a>
-            </div>
+            <nav class="header-nav">
+                <a href="#features">Features</a>
+                <a href="#download">Download</a>
+                <a href="#install">Installation</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+
+            <a href="#download" class="btn-header-download">
+                <i class="fa-solid fa-download"></i> Download APK
+            </a>
         </div>
     </header>
 
-    <!-- Main Mobile Web App Container -->
-    <main class="app-main">
-        
-        <!-- Hero Banner Section -->
-        <section id="home" class="app-section hero-app-banner">
-            <div class="banner-card">
-                <div class="banner-badge">
-                    <i class="fa-solid fa-shield-check"></i> Official v2.1.0 Stable Release
-                </div>
-                <h1 class="banner-heading">Unlimited Music.<br>Pure Lossless Sound.</h1>
-                <p class="banner-subtext">Stream 80M+ tracks in 320kbps Hi-Fi, view real-time synced lyrics, and download songs offline with 0 ads.</p>
-
-                <div class="banner-buttons">
-                    <a href="#download" class="btn-app-primary">
-                        <i class="fa-solid fa-download"></i> Download APK (18.5 MB)
+    <!-- Simple Hero Banner -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fa-solid fa-check-circle"></i> Official Release • Android 7.0+</span>
+                <h1 class="hero-title">Unlimited Music.<br>Pure 320kbps Sound.</h1>
+                <p class="hero-subtitle">RessoX is a clean, ad-free Android music player featuring 80M+ tracks, real-time synchronized karaoke lyrics, background playback, and direct offline downloads.</p>
+                
+                <div class="hero-cta-buttons">
+                    <a href="https://github.com/Prashxonline/RessoX-Web/releases/download/v2.1.0/RessoX_v2.1.0.apk" class="btn-primary-download">
+                        <i class="fa-solid fa-cloud-arrow-down"></i> Download RessoX APK (v2.1.0)
                     </a>
-                    <a href="#player" class="btn-app-secondary">
-                        <i class="fa-solid fa-play"></i> Open Web Player
+                    <a href="https://github.com/Prashxonline/RessoX-Web/releases" target="_blank" rel="noopener" class="btn-secondary-link">
+                        <i class="fa-brands fa-github"></i> GitHub Release
                     </a>
                 </div>
 
-                <div class="banner-stats">
-                    <div class="stat-pill"><i class="fa-solid fa-headphones"></i> 320kbps Audio</div>
-                    <div class="stat-pill"><i class="fa-solid fa-quote-left"></i> Synced Lyrics</div>
-                    <div class="stat-pill"><i class="fa-solid fa-ban"></i> 100% Ad-Free</div>
+                <div class="quick-stats">
+                    <div class="stat-box"><i class="fa-solid fa-headphones text-pink"></i> 320kbps Lossless</div>
+                    <div class="stat-box"><i class="fa-solid fa-quote-left text-pink"></i> Synced Lyrics</div>
+                    <div class="stat-box"><i class="fa-solid fa-ban text-pink"></i> 100% Ad-Free</div>
+                    <div class="stat-box"><i class="fa-solid fa-arrow-down-to-line text-pink"></i> Offline Downloads</div>
                 </div>
             </div>
-        </section>
-
-        <!-- Web Player App Module -->
-        <section id="player" class="app-section">
-            <div class="section-title-box">
-                <h2><i class="fa-solid fa-circle-play text-accent"></i> RessoX Web Player</h2>
-                <p>Search any song or play from trending charts below</p>
-            </div>
-
-            <div class="player-card">
-                <!-- Search Box -->
-                <div class="app-search-box">
-                    <i class="fa-solid fa-magnifying-glass search-ico"></i>
-                    <input type="text" id="searchInput" placeholder="Search song, artist, or album..." autocomplete="off">
-                    <button id="searchBtn" class="search-action-btn"><i class="fa-solid fa-arrow-right"></i></button>
-                    <!-- Autocomplete dropdown -->
-                    <div class="app-dropdown" id="searchDropdown"></div>
-                </div>
-
-                <!-- Genre Filters -->
-                <div class="chip-scroll-bar">
-                    <button class="chip-item active" data-genre="bollywood">🔥 Trending</button>
-                    <button class="chip-item" data-genre="lofi">🎧 Lofi Beats</button>
-                    <button class="chip-item" data-genre="punjabi">⚡ Punjabi Pop</button>
-                    <button class="chip-item" data-genre="edm">🚀 EDM Hits</button>
-                    <button class="chip-item" data-genre="romantic">💖 Romantic</button>
-                </div>
-
-                <!-- Now Playing Module -->
-                <div class="now-playing-box">
-                    <div class="cover-wrapper">
-                        <img src="assets/logo.jpg" id="playerArt" alt="Album Art" class="player-cover-img">
-                        <span class="hi-fi-badge">320kbps HQ</span>
-                    </div>
-
-                    <div class="player-info">
-                        <h3 id="playerTitle" class="track-title">Select a Song</h3>
-                        <p id="playerArtist" class="track-artist">RessoX Audio Engine</p>
-                    </div>
-
-                    <!-- Progress Slider -->
-                    <div class="track-progress">
-                        <input type="range" id="progressBar" min="0" max="100" value="0" step="0.1">
-                        <div class="track-times">
-                            <span id="currentTime">00:00</span>
-                            <span id="totalDuration">00:00</span>
-                        </div>
-                    </div>
-
-                    <!-- Playback Action Controls -->
-                    <div class="player-controls">
-                        <button id="shuffleBtn" class="btn-control" title="Shuffle"><i class="fa-solid fa-shuffle"></i></button>
-                        <button id="prevBtn" class="btn-control" title="Previous"><i class="fa-solid fa-backward-step"></i></button>
-                        <button id="playPauseBtn" class="btn-play-main" title="Play/Pause"><i class="fa-solid fa-play"></i></button>
-                        <button id="nextBtn" class="btn-control" title="Next"><i class="fa-solid fa-forward-step"></i></button>
-                        <button id="likeBtn" class="btn-control" title="Like"><i class="fa-regular fa-heart"></i></button>
-                    </div>
-                </div>
-
-                <!-- Lyrics & Queue Tabbed View -->
-                <div class="player-tabs-module">
-                    <div class="tabs-header">
-                        <button class="tab-link active" id="tabLyricsBtn"><i class="fa-solid fa-align-left"></i> Synced Lyrics</button>
-                        <button class="tab-link" id="tabQueueBtn"><i class="fa-solid fa-list-music"></i> Queue (<span id="queueCount">0</span>)</button>
-                    </div>
-
-                    <div class="tab-content active" id="lyricsContainer">
-                        <div class="lyrics-scroll-box" id="lyricsWrapper">
-                            <p class="lyric-row active">♪ RessoX Synced Lyrics Engine ♪</p>
-                            <p class="lyric-row">Play any song to view real-time synchronized karaoke lyrics</p>
-                        </div>
-                    </div>
-
-                    <div class="tab-content" id="queueContainer">
-                        <div class="queue-items-list" id="queueList"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Curated Playlists Section -->
-        <section id="playlists" class="app-section">
-            <div class="section-title-box">
-                <h2><i class="fa-solid fa-layer-group text-accent"></i> Top Playlists</h2>
-                <p>Tap any playlist to load instantly</p>
-            </div>
-
-            <div class="playlists-scroll-grid">
-                <div class="app-playlist-card" data-query="Top 20 India 2026">
-                    <div class="playlist-thumb">
-                        <img src="assets/hero.jpg" alt="Top 50 India">
-                        <span class="play-icn"><i class="fa-solid fa-play"></i></span>
-                    </div>
-                    <h4>Top 50 India</h4>
-                    <p>Most played songs right now</p>
-                </div>
-
-                <div class="app-playlist-card" data-query="Arijit Singh Hits">
-                    <div class="playlist-thumb">
-                        <img src="assets/logo.jpg" alt="Arijit Essentials">
-                        <span class="play-icn"><i class="fa-solid fa-play"></i></span>
-                    </div>
-                    <h4>Arijit Essentials</h4>
-                    <p>Best romantic & soulful tracks</p>
-                </div>
-
-                <div class="app-playlist-card" data-query="Lofi Chill Beats">
-                    <div class="playlist-thumb">
-                        <img src="assets/hero.jpg" alt="Lofi Study">
-                        <span class="play-icn"><i class="fa-solid fa-play"></i></span>
-                    </div>
-                    <h4>Lofi Study Beats</h4>
-                    <p>Relaxing chill instrumental beats</p>
-                </div>
-
-                <div class="app-playlist-card" data-query="Punjabi Hits 2026">
-                    <div class="playlist-thumb">
-                        <img src="assets/logo.jpg" alt="Punjabi Pop">
-                        <span class="play-icn"><i class="fa-solid fa-play"></i></span>
-                    </div>
-                    <h4>Punjabi Pop Hits</h4>
-                    <p>High energy dance anthems</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Solid Features Section -->
-        <section id="features" class="app-section">
-            <div class="section-title-box">
-                <h2><i class="fa-solid fa-star text-accent"></i> Why Choose RessoX</h2>
-                <p>Premium features built for music enthusiasts</p>
-            </div>
-
-            <div class="features-list-grid">
-                <div class="feature-item-card">
-                    <div class="feature-icn-box"><i class="fa-solid fa-headphones"></i></div>
-                    <div>
-                        <h3>320kbps Hi-Fi Audio Quality</h3>
-                        <p>Listen in crisp studio sound with deep bass, clear treble, and zero audio compression artifacts.</p>
-                    </div>
-                </div>
-
-                <div class="feature-item-card">
-                    <div class="feature-icn-box"><i class="fa-solid fa-quote-left"></i></div>
-                    <div>
-                        <h3>Real-Time Synced Karaoke Lyrics</h3>
-                        <p>Follow every line in sync with the song. Easily copy or share lyrics cards with friends.</p>
-                    </div>
-                </div>
-
-                <div class="feature-item-card">
-                    <div class="feature-icn-box"><i class="fa-solid fa-download"></i></div>
-                    <div>
-                        <h3>High-Speed MP3 Offline Downloads</h3>
-                        <p>Save songs directly to your phone storage with complete ID3 tags and album cover artwork.</p>
-                    </div>
-                </div>
-
-                <div class="feature-item-card">
-                    <div class="feature-icn-box"><i class="fa-solid fa-ban"></i></div>
-                    <div>
-                        <h3>100% Ad-Free Experience</h3>
-                        <p>No audio ads, no mandatory sign-in popups, and no banner interruptions.</p>
-                    </div>
-                </div>
-
-                <div class="feature-item-card">
-                    <div class="feature-icn-box"><i class="fa-solid fa-sliders"></i></div>
-                    <div>
-                        <h3>ExoPlayer 1.6 Background Engine</h3>
-                        <p>Native Media3 playback engine supporting background play, lockscreen controls, and bluetooth integration.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Native App Showcase -->
-        <section id="showcase" class="app-section">
-            <div class="showcase-card-flat">
-                <div class="showcase-img-box">
-                    <img src="assets/phone.jpg" alt="RessoX App Interface" class="app-phone-preview">
-                </div>
-                <div class="showcase-details">
-                    <span class="pill-tag">Native Android App</span>
-                    <h2>Designed for Smooth Performance</h2>
-                    <p>RessoX is optimized for low memory usage and battery efficiency. Play music in the background seamlessly while using other apps.</p>
-                    <a href="#download" class="btn-app-primary"><i class="fa-solid fa-download"></i> Get Android APK</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Download APK Section -->
-        <section id="download" class="app-section">
-            <div class="download-box-card">
-                <div class="download-badge"><i class="fa-solid fa-check-circle"></i> Tested & Verified Safe</div>
-                <h2>Download RessoX APK v2.1.0</h2>
-                <p>Free download for Android devices running Android 7.0 (Nougat) or higher.</p>
-
-                <div class="specs-grid">
-                    <div class="spec-cell">
-                        <span class="lbl">Version</span>
-                        <span class="val">v2.1.0</span>
-                    </div>
-                    <div class="spec-cell">
-                        <span class="lbl">File Size</span>
-                        <span class="val">18.5 MB</span>
-                    </div>
-                    <div class="spec-cell">
-                        <span class="lbl">Updated</span>
-                        <span class="val">July 2026</span>
-                    </div>
-                    <div class="spec-cell">
-                        <span class="lbl">Min Android</span>
-                        <span class="val">Android 7.0+</span>
-                    </div>
-                </div>
-
-                <div class="download-btn-group">
-                    <button id="downloadApkBtn" class="btn-download-lg">
-                        <i class="fa-solid fa-cloud-arrow-down"></i> Direct Download APK (Server 1)
-                    </button>
-                    <a href="https://github.com/Prashxonline/RessoX-Web/releases" target="_blank" rel="noopener" class="btn-download-outline">
-                        <i class="fa-brands fa-github"></i> GitHub Release Mirror
-                    </a>
-                </div>
-
-                <div class="checksum-bar">
-                    <span>SHA-256:</span>
-                    <code id="shaCode">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</code>
-                    <button id="copyShaBtn" class="btn-copy-icn"><i class="fa-regular fa-copy"></i></button>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="app-section">
-            <div class="section-title-box">
-                <h2><i class="fa-solid fa-circle-question text-accent"></i> FAQ</h2>
-                <p>Frequently asked questions</p>
-            </div>
-
-            <div class="faq-list">
-                <div class="faq-card">
-                    <button class="faq-toggle">
-                        <span>Is RessoX completely free to use?</span>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-content">
-                        <p>Yes! RessoX is 100% free with zero subscriptions, hidden fees, or ad popups.</p>
-                    </div>
-                </div>
-
-                <div class="faq-card">
-                    <button class="faq-toggle">
-                        <span>How to install RessoX APK on Android?</span>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-content">
-                        <p>Download the APK file, enable "Install from Unknown Sources" in phone settings, and tap Install.</p>
-                    </div>
-                </div>
-
-                <div class="faq-card">
-                    <button class="faq-toggle">
-                        <span>Does RessoX support offline playback?</span>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-content">
-                        <p>Yes, you can download any song directly to your device storage and play it offline anytime.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- App Bottom Player Bar (Fixed for Mobile & Web) -->
-    <div class="app-bottom-player" id="bottomPlayerBar">
-        <div class="mini-cover">
-            <img src="assets/logo.jpg" id="miniArt" alt="Mini Art">
         </div>
-        <div class="mini-meta">
-            <h4 id="miniTitle">Select Song</h4>
-            <p id="miniArtist">RessoX Music Engine</p>
-        </div>
-        <div class="mini-actions">
-            <button id="miniPrevBtn" class="btn-mini"><i class="fa-solid fa-backward-step"></i></button>
-            <button id="miniPlayBtn" class="btn-mini-play"><i class="fa-solid fa-play"></i></button>
-            <button id="miniNextBtn" class="btn-mini"><i class="fa-solid fa-forward-step"></i></button>
-        </div>
-    </div>
+    </section>
 
-    <!-- Mobile Fixed Bottom Navigation Bar -->
-    <nav class="app-bottom-nav">
-        <a href="#home" class="nav-tab active">
-            <i class="fa-solid fa-house"></i>
-            <span>Home</span>
-        </a>
-        <a href="#player" class="nav-tab">
-            <i class="fa-solid fa-music"></i>
-            <span>Player</span>
-        </a>
-        <a href="#playlists" class="nav-tab">
-            <i class="fa-solid fa-compact-disc"></i>
-            <span>Playlists</span>
-        </a>
-        <a href="#features" class="nav-tab">
-            <i class="fa-solid fa-sparkles"></i>
-            <span>Features</span>
-        </a>
-        <a href="#download" class="nav-tab">
-            <i class="fa-solid fa-download"></i>
-            <span>APK</span>
-        </a>
-    </nav>
+    <!-- Clean Features List Section -->
+    <section id="features" class="section-container">
+        <div class="section-heading">
+            <h2>Key App Features</h2>
+            <p>Everything you need for an uncompromised music experience on Android.</p>
+        </div>
 
-    <!-- Toast Notification Container -->
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-headphones"></i></div>
+                <h3>320kbps Hi-Fi Audio</h3>
+                <p>Stream and download songs in crisp 320kbps studio quality with zero compression artifacts.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <h3>Real-Time Synced Lyrics</h3>
+                <p>Follow along with live karaoke lyrics synchronized word-for-word with music playback.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-download"></i></div>
+                <h3>Offline Music Downloads</h3>
+                <p>Save tracks directly to your device storage with complete ID3 tags and album cover artwork.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-ban"></i></div>
+                <h3>Zero Ads & Interruptions</h3>
+                <p>100% ad-free experience. No audio commercials, mandatory logins, or banner popups.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-sliders"></i></div>
+                <h3>ExoPlayer Media3 Engine</h3>
+                <p>Native Android background service supporting screen-off playback, lockscreen art, and bluetooth controls.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                <h3>Clean & Minimal UI</h3>
+                <p>Lightweight Kotlin app designed for low RAM consumption, fast response, and zero battery drain.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple APK Download Section -->
+    <section id="download" class="section-container">
+        <div class="download-card">
+            <div class="download-header">
+                <img src="assets/logo.jpg" alt="RessoX App Icon" class="app-icon-download">
+                <div>
+                    <h2>RessoX Android APK</h2>
+                    <p class="download-meta-txt">Version 2.1.0 • File Size: 18.5 MB • Android 7.0 (Nougat) or higher</p>
+                </div>
+            </div>
+
+            <div class="download-action-box">
+                <a href="https://github.com/Prashxonline/RessoX-Web/releases/download/v2.1.0/RessoX_v2.1.0.apk" class="btn-main-apk">
+                    <i class="fa-solid fa-download"></i> Direct Download APK (18.5 MB)
+                </a>
+                <a href="https://github.com/Prashxonline/RessoX-Web/releases" target="_blank" rel="noopener" class="btn-mirror-link">
+                    <i class="fa-brands fa-github"></i> GitHub Release Mirror
+                </a>
+            </div>
+
+            <div class="checksum-info">
+                <span>SHA-256 Checksum:</span>
+                <code id="shaCode">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</code>
+                <button id="copyShaBtn" class="btn-copy" title="Copy Checksum"><i class="fa-regular fa-copy"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Steps Section -->
+    <section id="install" class="section-container">
+        <div class="section-heading">
+            <h2>Easy 3-Step Installation</h2>
+            <p>Follow these quick steps to install RessoX on your Android phone.</p>
+        </div>
+
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-num">1</div>
+                <h3>Download APK</h3>
+                <p>Click the download button above to save the <code>RessoX_v2.1.0.apk</code> file to your device.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-num">2</div>
+                <h3>Allow Unknown Sources</h3>
+                <p>Go to Phone Settings &gt; Security &gt; Enable "Install from Unknown Sources".</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-num">3</div>
+                <h3>Install & Enjoy</h3>
+                <p>Tap the downloaded APK file, click Install, and launch RessoX to start listening!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple FAQ Section -->
+    <section id="faq" class="section-container">
+        <div class="section-heading">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Is RessoX free to use?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, RessoX is 100% free with zero subscription fees, hidden charges, or ad popups.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Is root required to use RessoX?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>No, RessoX works on all standard non-rooted and rooted Android phones running Android 7.0 or higher.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How do offline downloads work?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Tap the download button next to any song in the app to save high quality MP3 files directly to your storage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 RessoX. Developed by <a href="https://github.com/Prashxonline" target="_blank" rel="noopener">Prashxonline</a>.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Prashxonline/RessoX-Web" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub Source</a>
+                <a href="https://t.me/" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i> Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
     <div id="toastContainer" class="toast-container"></div>
 
-    <!-- Audio Element -->
-    <audio id="audioElement" crossorigin="anonymous" preload="metadata"></audio>
-
-    <!-- App Script -->
     <script src="app.js"></script>
 </body>
 </html>
